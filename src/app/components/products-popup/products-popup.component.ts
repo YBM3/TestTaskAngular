@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { ChangeDetectorRef, Component, EventEmitter, Input, OnDestroy, Output } from '@angular/core';
+import { PopupService } from '../../services/popup.service';
+import { Subscription, take } from 'rxjs';
 
 @Component({
   selector: 'app-products-popup',
@@ -9,5 +11,13 @@ import { Component, Input } from '@angular/core';
   styleUrl: './products-popup.component.scss'
 })
 export class ProductsPopupComponent {
-  @Input() showPopup!: boolean;
+
+  constructor(public popupService: PopupService) { }
+
+  hidePopup() {
+    const element = document.querySelector('.header');
+    if (!(element && element.matches(':hover'))) {
+      this.popupService.setShowPopup(false);
+    }
+  }
 }

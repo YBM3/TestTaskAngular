@@ -122,6 +122,10 @@
     }
   }
 
+  &__item-title {
+    width: calc(100% - 36px);
+  }
+
   @media (max-width: 965px) {
     &__list-row {
       flex-direction: column;
@@ -142,6 +146,14 @@
   @media (max-width: 700px) {
     align-items: flex-start;
     height: 100vh;
+
+    br {
+      display: none;
+    }
+
+    &__list-row, &__list-column {
+      max-width: 100%;
+    }
 
     &__container {
       flex-direction: column;

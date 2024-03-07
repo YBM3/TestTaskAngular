@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ProductsPopupComponent } from '../products-popup/products-popup.component';
 import { CommonModule } from '@angular/common';
+import { PopupService } from '../../services/popup.service';
 
 @Component({
   selector: 'app-header',
@@ -12,11 +13,18 @@ import { CommonModule } from '@angular/common';
 export class HeaderComponent {
  text = 'Product';
 
- showPopup = false;
+ constructor(public popupService: PopupService) { }
 
- togglePopup() {
-  this.showPopup = !this.showPopup;
-  console.log('togglePopup called, showPopup is now', this.showPopup);
-}
+  togglePopup() {
+    this.popupService.setShowPopup(!this.popupService.showPopup);
+  }
 
+  hidePopup() {
+    this.popupService.isMouseOverHeader.subscribe(isOver => {
+      if (!isOver) {
+        this.popupService.setShowPopup(false);
+      }
+    });
+  }
+  
 }

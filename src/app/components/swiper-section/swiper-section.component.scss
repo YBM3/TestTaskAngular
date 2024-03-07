@@ -74,11 +74,11 @@
     width: 100%;
   }
 
-  &__button {
-    display: block;
-    width: 100%;
-    max-width: 230px;
-  }
+  // &__button {
+  //   display: block;
+  //   width: 100%;
+  //   max-width: 230px;
+  // }
 
   // @media (min-width: 320px) {
   //   padding: 40px 24px;
@@ -138,4 +138,9 @@
       padding-right: 24px;
     }
   }
+}
+
+.swiper-section__swiper-slide-img {
+  -webkit-mask-image: linear-gradient(to top, transparent, black 50%);
+  mask-image: linear-gradient(to top, transparent, black 50%);
 }

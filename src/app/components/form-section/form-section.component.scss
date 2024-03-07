@@ -70,6 +70,21 @@
     border-radius: 12px;
     gap: 24px;
     max-width: 556px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      top: 60%;
+      left: -30%;
+      width: 100px;
+      height: 90px;
+      background-image: url("../../../assets//img/Arrow\ 06.svg");
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+    }
   }
 
   &__button {
@@ -84,6 +99,10 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
     gap: 8px;
+  }
+
+  &__button {
+    font-size: 17px;
   }
 
   // @media (min-width: 320px) {
@@ -137,6 +156,12 @@
     &__info-box {
       gap: 30px;
     }
+
+    &__form {
+      &::before {
+        display: none;
+      }
+    }
   }
 
   @media (max-width: 620px) {
@@ -157,7 +182,6 @@
     &__form {
       padding: 15px;
     }
-
   }
 
   @media (max-width: 420px) {
@@ -165,10 +189,6 @@
       padding: 60px 24px;
     }
   }
-
-
 }
 
-.form-section__button {
-  width: 100% !important;
-}
+

@@ -5,7 +5,6 @@
   padding: 0;
 }
 
-
 html,
 body,
 div,
@@ -319,4 +318,12 @@ table {
   .mdc-label {
     font-size: 14px;
   }
+}
+
+.form-section__button {
+  font-size: 17px !important;
+}
+
+.swiper-section__button {
+  max-width: 230px;
 }
