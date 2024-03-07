@@ -1,0 +1,41 @@
+button {
+  border-radius: 4px;
+  gap: 19px;
+  background: rgba(105, 54, 211, 1);
+  padding: 16px 24px;
+  font-family: Archivo;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+
+  &:hover {
+    background: rgba(148, 122, 255, 1);
+  }
+
+  &:active {
+    background: rgba(74, 22, 181, 1);
+  }
+
+  @media (max-width: 620px) {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  @media (max-width: 420px) {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  // @media (min-width: 320px) {
+  //   padding: 12px 24px 12px 24px;
+  //   font-size: 16px;
+  //   line-height: 24px;
+  // }
+}

@@ -1,0 +1,95 @@
+<div
+  class="bg-dark"
+  [style.opacity]="showPopup ? '1' : '0'"
+  [style.zIndex]="showPopup ? '3' : '-1'"
+>
+  <div
+    class="products-popup"
+    [style.transform]="showPopup ? 'translateY(0)' : 'translateY(-100%)'"
+  >
+    <div class="products-popup__container">
+      <div class="products-popup__content">
+        <h2 class="products-popup__content-title">Pay-ins</h2>
+        <div class="products-popup__list-row">
+          <div class="products-popup__item">
+            <img
+              src="../../../assets/img/popup1.svg"
+              alt="Product 1"
+              class="products-popup__item-image products-popup__item-image-media"
+            />
+            <div class="products-popup__item-box">
+              <h3 class="products-popup__item-title">Open Banking Payments</h3>
+              <p class="products-popup__item-description">
+                Fast, secure, and regulated bank transfers
+              </p>
+            </div>
+          </div>
+          <div class="products-popup__item">
+            <img
+              src="../../../assets/img/popup2.svg"
+              alt="Product 1"
+              class="products-popup__item-image products-popup__item-image-media"
+            />
+            <div class="products-popup__item-box">
+              <h3 class="products-popup__item-title">Card <br />Payments</h3>
+              <p class="products-popup__item-description">
+                Easy card payments processing for merchants
+              </p>
+            </div>
+          </div>
+          <div class="products-popup__item">
+            <img
+              src="../../../assets/img/popup3.svg"
+              alt="Product 1"
+              class="products-popup__item-image products-popup__item-image-media"
+            />
+            <div class="products-popup__item-box">
+              <h3 class="products-popup__item-title">
+                Checkout <br />
+                Form
+              </h3>
+              <p class="products-popup__item-description">
+                Streamlined checkout experience for customers
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="products-popup__content">
+        <h2 class="products-popup__content-title">Pay-outs</h2>
+        <div class="products-popup__list-column">
+          <div class="products-popup__item products-popup__item-row">
+            <img
+              src="../../../assets/img/popup4.svg"
+              alt="Product 1"
+              class="products-popup__item-image products-popup__item-image-row"
+            />
+            <div class="products-popup__item-box">
+              <h3 class="products-popup__item-title">Bank Payouts</h3>
+              <p class="products-popup__item-description">
+                Convenient and fast bank-based payouts for
+                <br />
+                merchants
+              </p>
+            </div>
+          </div>
+          <div class="products-popup__item products-popup__item-row">
+            <img
+              src="../../../assets/img/popup5.svg"
+              alt="Product 1"
+              class="products-popup__item-image"
+            />
+            <div class="products-popup__item-box">
+              <h3 class="products-popup__item-title">Card Payouts</h3>
+              <p class="products-popup__item-description">
+                Effortless card-based
+                <br />
+                payouts for merchants
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,322 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.mat-mdc-select-arrow > svg {
+  display: none !important;
+}
+
+.mat-mdc-select-arrow {
+  background-image: url("./assets/img/R_Icon.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px !important;
+  height: 24px !important;
+  position: absolute;
+  top: 8px;
+  right: -5px;
+}
+
+.mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+  top: 50% !important;
+  left: 16px !important;
+  z-index: 1 !important;
+  font-family: Archivo !important;
+  font-weight: 400 !important;
+  text-align: left !important;
+  color: rgba(163, 167, 189, 1) !important;
+}
+
+.mdc-line-ripple {
+  display: none !important;
+}
+
+.mat-mdc-form-field-infix {
+  padding: 0 !important;
+}
+
+.mdc-text-field {
+  padding: 0 !important;
+  background-color: unset !important;
+}
+
+.mat-mdc-form-field-infix {
+  min-height: 40px !important;
+  border-radius: 4px !important;
+}
+
+.mat-focused {
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px rgba(105, 54, 211, 1);
+}
+
+.mat-mdc-select-value {
+  padding-top: 20px;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled).mdc-text-field--focused
+  .mdc-floating-label,
+.mdc-text-field--filled:not(.mdc-text-field--disabled).mdc-text-field--focused
+  .mdc-floating-label--float-above {
+  font-family: Archivo !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 14px !important;
+  letter-spacing: 0em !important;
+  text-align: left !important;
+  color: rgba(105, 54, 211, 1) !important;
+}
+
+.mat-mdc-floating-label[ng-reflect-floating="true"] {
+  font-family: Archivo !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 14px !important;
+  letter-spacing: 0em !important;
+  text-align: left !important;
+  color: rgba(163, 167, 189, 1) !important; // серый цвет
+}
+
+.mat-mdc-select-min-line {
+  //styleName: RE/noda-text-body/m/Semibold;
+  font-family: Archivo;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.004em;
+  text-align: left;
+  color: rgba(29, 36, 69, 1);
+}
+
+.mat-mdc-form-field-subscript-wrapper {
+  display: none;
+}
+
+.mat-pseudo-checkbox-minimal.mat-pseudo-checkbox-checked::after {
+  display: none;
+}
+
+.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled)
+  .mdc-list-item__primary-text {
+  color: rgba(29, 36, 69, 1) !important;
+  font-family: Archivo !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  letter-spacing: -0.004em !important;
+  text-align: left !important;
+}
+
+.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled):not(
+    .mat-mdc-option-multiple
+  ) {
+  background-color: white !important;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.04) !important;
+  }
+}
+
+.mat-mdc-option:focus.mdc-list-item,
+.mat-mdc-option.mat-mdc-option-active.mdc-list-item {
+  background-color: white !important;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.04) !important;
+  }
+}
+
+.mdc-checkbox
+  .mdc-checkbox__native-control:enabled:checked
+  ~ .mdc-checkbox__background,
+.mdc-checkbox
+  .mdc-checkbox__native-control:enabled:indeterminate
+  ~ .mdc-checkbox__background,
+.mdc-checkbox
+  .mdc-checkbox__native-control[data-indeterminate="true"]:enabled
+  ~ .mdc-checkbox__background {
+  background-color: rgba(105, 54, 211, 1) !important;
+  border-color: rgba(105, 54, 211, 1) !important;
+}
+
+.mdc-checkbox__native-control
+  .mdc-checkbox--anim-unchecked-checked
+  .mdc-checkbox--selected {
+  background-color: rgba(105, 54, 211, 1) !important;
+}
+
+.mdc-checkbox--anim-checked-checked {
+  background-color: rgba(105, 54, 211, 1) !important;
+}
+
+.mat-mdc-checkbox-ripple,
+.mdc-checkbox__ripple {
+  display: none !important;
+}
+
+.mdc-checkbox {
+  padding-left: 0 !important;
+}
+
+.mdc-label {
+  padding: 0 !important;
+  font-family: Archivo;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.004em;
+  text-align: left;
+  color: rgba(29, 36, 69, 1);
+}
+
+.mdc-checkbox .mdc-checkbox__background {
+  left: unset !important;
+}
+
+@media (max-width: 620px) {
+  .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+    font-size: 16px;
+  }
+
+  .mdc-label {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+    font-size: 14px;
+  }
+
+  .mdc-label {
+    font-size: 14px;
+  }
+}

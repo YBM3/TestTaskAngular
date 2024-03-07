@@ -1,0 +1,41 @@
+.select {
+  padding: 0 16px;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 1);
+  font-family: Archivo;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.004em;
+  text-align: left;
+  color: rgba(163, 167, 189, 1);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select > div > div:nth-child(2) > div {
+  display: none !important;
+}
+
+.mat-mdc-select-arrow {
+  display: none !important;
+}
+
+.mat-mdc-form-field {
+  width: 100%;
+}
+
+@media (max-width: 620px) {
+  .select {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,141 @@
+.swiper-section {
+  background: rgba(41, 48, 77, 1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    padding: 150px 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    gap: 40px;
+    padding-right: 0;
+  }
+
+  &__title {
+    font-family: Archivo;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 24px;
+  }
+
+  &__text {
+    font-family: Archivo;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 20px;
+    color: rgba(255, 255, 255, 1);
+    min-width: 455px;
+    width: 100%;
+  }
+
+  &__content {
+    padding-bottom: 20px;
+  }
+
+  &__swiper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__swiper-slide {
+    max-width: 380px;
+  }
+
+  &__swiper-container {
+    height: 100%;
+    width: 100%;
+    max-width: 816px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  &__swiper-slide-img {
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    max-width: 230px;
+  }
+
+  // @media (min-width: 320px) {
+  //   padding: 40px 24px;
+  // }
+
+  @media (max-width: 1440px) {
+    &__text {
+      min-width: 0;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    &__container {
+      padding: 80px 60px;
+      flex-direction: column;
+      padding-right: 0;
+    }
+
+    &__content {
+      padding-right: 60px;
+    }
+
+    &__swiper {
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+  }
+
+  @media (max-width: 620px) {
+    &__container {
+      padding: 60px 40px;
+      padding-right: 0;
+    }
+
+    &__content {
+      padding-right: 40px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    &__container {
+      padding: 60px 24px;
+      padding-right: 0;
+    }
+
+    &__content {
+      padding-right: 24px;
+    }
+  }
+}

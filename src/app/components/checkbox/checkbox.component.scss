@@ -1,0 +1,22 @@
+.mdc-checkbox
+  .mdc-checkbox__native-control:enabled:checked
+  ~ .mdc-checkbox__background,
+.mdc-checkbox
+  .mdc-checkbox__native-control:enabled:indeterminate
+  ~ .mdc-checkbox__background,
+.mdc-checkbox
+  .mdc-checkbox__native-control[data-indeterminate="true"]:enabled
+  ~ .mdc-checkbox__background {
+  background-color: rgba(105, 54, 211, 1) !important;
+  border-color: rgba(105, 54, 211, 1) !important;
+}
+
+.mat-checkbox.mat-accent .mat-checkbox-checkmark-path {
+  stroke: white;
+}
+
+.mat-checkbox.mat-accent .mat-checkbox-frame {
+}
+
+
+// Define a custom theme
