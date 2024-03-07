@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
 export class HeaderComponent {
  text = 'Product';
 
- showPopup = true;
+ showPopup = false;
 
  togglePopup() {
   this.showPopup = !this.showPopup;
