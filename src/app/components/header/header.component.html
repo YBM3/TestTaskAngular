@@ -1,20 +1,20 @@
-
 <header class="header">
   <div class="header__container">
     <div class="header__logo-container">
       <div class="header__logo"></div>
       <div
+        (click)="togglePopup()"
         class="header__logo-text-box"
         (mouseover)="popupService.setShowPopup(true)"
       >
         <span
           class="header__logo-text"
-          [style.opacity]="popupService.showPopup  ? '0' : '1'"
+          [style.opacity]="popupService.showPopup ? '0' : '1'"
           >{{ text }}</span
         >
         <span
           class="header__logo-gradient-text"
-          [style.opacity]="popupService.showPopup  ? '1' : '0'"
+          [style.opacity]="popupService.showPopup ? '1' : '0'"
           >{{ text }}</span
         >
       </div>
