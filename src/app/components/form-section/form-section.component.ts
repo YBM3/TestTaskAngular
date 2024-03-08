@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { SelectComponent } from '../select/select.component';
-import { InputComponent } from '../input/input.component';
-import { CheckboxComponent } from '../checkbox/checkbox.component';
-import { ButtonComponent } from '../button/button.component';
+import { SelectComponent } from '../../core/modules/select/select.component';
+import { InputComponent } from '../../core/modules/input/input.component';
+import { CheckboxComponent } from '../../core/modules/checkbox/checkbox.component';
+import { ButtonComponent } from '../../core/modules/button/button.component';
 
 @Component({
   selector: 'app-form-section',

@@ -132,6 +132,71 @@ table {
   display: none !important;
 }
 
+.form-section__checkbox--disabled > div > div > div:nth-child(4) {
+  border: 1px solid rgba(201, 204, 216, 1) !important;
+  background-color: rgba(231, 234, 243, 0.5) !important;
+}
+
+.form-section__checkbox--disabled
+  > div
+  > div
+  > .mdc-checkbox__native-control:enabled:checked
+  ~ .mdc-checkbox__background {
+  border: 1px solid rgba(201, 204, 216, 1) !important;
+  background-color: rgba(231, 234, 243, 0.5) !important;
+}
+
+.form-section__checkbox--disabled > div > label {
+  color: rgba(163, 167, 189, 1);
+}
+
+.mdc-checkbox__checkmark {
+  width: 12px;
+  margin: auto;
+  height: 10px;
+}
+
+.mdc-checkbox {
+  &:hover .mdc-checkbox__background {
+    border: 1px solid rgba(148, 122, 255, 1) !important;
+  }
+
+  &:hover
+    .mdc-checkbox__native-control:enabled:checked
+    ~ .mdc-checkbox__background {
+    border: 1px solid rgba(148, 122, 255, 1) !important;
+    background-color: rgba(148, 122, 255, 1) !important;
+  }
+
+  &:active .mdc-checkbox__background {
+    border: 1px solid rgba(74, 22, 181, 1) !important;
+  }
+
+  &:active
+    .mdc-checkbox__native-control:enabled:checked
+    ~ .mdc-checkbox__background {
+    border: 1px solid rgba(74, 22, 181, 1) !important;
+    background-color: rgba(74, 22, 181, 1) !important;
+  }
+
+  &:disabled .mdc-checkbox__background {
+    border: 1px solid rgba(201, 204, 216, 1) !important;
+  }
+
+  &:disabled
+    .mdc-checkbox__native-control:enabled:checked
+    ~ .mdc-checkbox__background {
+    border: 1px solid rgba(201, 204, 216, 1) !important;
+    background-color: rgba(201, 204, 216, 1) !important;
+  }
+}
+
+.mdc-checkbox__background {
+  border: 1px solid rgba(163, 167, 189, 1) !important;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
 .mat-mdc-select-arrow {
   background-image: url("./assets/img/R_Icon.svg");
   background-size: 100%;
@@ -142,6 +207,10 @@ table {
   position: absolute;
   top: 8px;
   right: -5px;
+}
+
+.select__disabled > div > div:nth-child(2) > div {
+  background-image: url("./assets/img/R_Icon_disable.svg") !important;
 }
 
 .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
@@ -181,6 +250,10 @@ table {
 
 .mat-mdc-select-value {
   padding-top: 20px;
+}
+
+.select__disabled > div > div:nth-child(1) > .mat-mdc-select-value-text > span {
+  color: rgba(99, 107, 138, 1) !important;
 }
 
 .mdc-text-field--filled:not(.mdc-text-field--disabled).mdc-text-field--focused
@@ -266,6 +339,7 @@ table {
   ~ .mdc-checkbox__background {
   background-color: rgba(105, 54, 211, 1) !important;
   border-color: rgba(105, 54, 211, 1) !important;
+  transition: all 0.3s ease;
 }
 
 .mdc-checkbox__native-control
@@ -318,8 +392,6 @@ table {
     font-size: 17px;
   }
 }
-
-
 
 .form-section__button {
   font-size: 17px;
