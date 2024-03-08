@@ -16,7 +16,7 @@ export class HeaderComponent {
  constructor(public popupService: PopupService) { }
 
   togglePopup() {
-    this.popupService.setShowPopup(!this.popupService.showPopup);
+    this.popupService.setShowPopup(false);
   }
 
   hidePopup() {
