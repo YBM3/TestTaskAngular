@@ -6,7 +6,6 @@ import { Injectable } from '@angular/core';
 })
 export class PopupService {
   private _showPopup = new BehaviorSubject<boolean>(false);
-  private _isMouseOverHeader = new BehaviorSubject<boolean>(false);
 
   showPopup$ = this._showPopup.asObservable();
 
@@ -18,11 +17,4 @@ export class PopupService {
     this._showPopup.next(value);
   }
 
-  setIsMouseOverHeader(isOver: boolean) {
-    this._isMouseOverHeader.next(isOver);
-  }
-
-  get isMouseOverHeader() {
-    return this._isMouseOverHeader.asObservable();
-  }
 }

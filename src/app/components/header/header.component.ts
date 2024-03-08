@@ -16,15 +16,15 @@ export class HeaderComponent {
  constructor(public popupService: PopupService) { }
 
   togglePopup() {
+    if (window.innerWidth < 966) {
     this.popupService.setShowPopup(!this.popupService.showPopup);
+    }
   }
 
-  hidePopup() {
-    this.popupService.isMouseOverHeader.subscribe(isOver => {
-      if (!isOver) {
-        this.popupService.setShowPopup(false);
-      }
-    });
+  mouseEnter() {
+    if (window.innerWidth >= 966) {
+      this.popupService.setShowPopup(true);
+    }
   }
   
 }

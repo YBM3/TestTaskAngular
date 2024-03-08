@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectorRef, Component, EventEmitter, Input, OnDestroy, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { PopupService } from '../../services/popup.service';
-import { Subscription, take } from 'rxjs';
+
 
 @Component({
   selector: 'app-products-popup',
