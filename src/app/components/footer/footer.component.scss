@@ -10,10 +10,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 150px 100px;
-    gap: 80px;
+    padding: 60px 24px;
+    gap: 30px;
     max-width: 1440px;
     width: 100%;
+    flex-direction: column;
   }
 
   &__title {
@@ -151,31 +152,31 @@
 
   @media (max-width: 1200px) {
     &__container {
-      padding: 80px 60px;
+      padding: 150px 100px
     }
   }
 
   @media (max-width: 1080px) {
     &__container {
-      gap: 30px;
+      gap: 80px;
     }
   }
 
   @media (max-width: 876px) {
     &__container {
-      flex-direction: column;
+      flex-direction: row;
     }
   }
 
   @media (max-width: 620px) {
     &__container {
-      padding: 60px 40px;
+      padding: 80px 60px;
     }
   }
 
   @media (max-width: 420px) {
     &__container {
-      padding: 60px 24px;
+      padding: 60px 40px;
     }
   }
 }

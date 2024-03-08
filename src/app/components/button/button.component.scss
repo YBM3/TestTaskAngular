@@ -2,9 +2,11 @@ button {
   border-radius: 4px;
   gap: 19px;
   background: rgba(105, 54, 211, 1);
-  padding: 16px 24px;
   font-family: Archivo;
-  font-size: 20px;
+
+  font-size: 14px;
+  padding: 10px 20px;
+
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
@@ -23,13 +25,13 @@ button {
     background: rgba(74, 22, 181, 1);
   }
 
-  @media (max-width: 620px) {
+  @media (min-width: 420px) {
     font-size: 16px;
     padding: 12px 24px;
   }
 
-  @media (max-width: 420px) {
-    font-size: 14px;
-    padding: 10px 20px;
+  @media (min-width: 620px) {
+    padding: 16px 24px;
+    font-size: 20px;
   }
 }
