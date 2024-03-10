@@ -25,6 +25,10 @@ button {
     background: rgba(74, 22, 181, 1);
   }
 
+  &:disabled {
+    background: rgba(201, 204, 216, 1);
+  }
+
   @media (min-width: 420px) {
     font-size: 16px;
     padding: 12px 24px;
